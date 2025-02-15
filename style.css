@@ -1,0 +1,37 @@
+.sortable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+
+a {
+    color:white !important;
+}
+
+#search-input {
+    width:50%;
+    font-size:1.1em;
+    padding:5px;
+    margin:5px 0px 5px 0px;
+}
+
+.sortable th,
+.sortable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    white-space: nowrap;
+    font-size:.8em;
+}
+
+.sortable th {
+    cursor: pointer;
+}
+
+.sortable tr:nth-child(even) {
+    background-color: #333333;
+}
