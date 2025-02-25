@@ -100,9 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const filteredData = data.filter(row => {
-            return Object.values(row).some(cellValue =>
-                cellValue.toString().toLowerCase().includes(query)
-            );
+            return Object.values(row).some(cellValue => {
+                console.log(cellValue)
+                return cellValue.toString().toLowerCase().includes(query);
+            });
         });
 
         createSortableTable(tableContainer, filteredData);
